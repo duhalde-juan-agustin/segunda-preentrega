@@ -1,226 +1,273 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
+    font-family: Arial;
 }
 
 body {
-    background-color: #d4d4d4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    background-color: rgb(39, 39, 39);
+}
+
+#adn {
+    background-color: white;
 }
 
 h1 {
     text-align: center;
-    margin-top: 50px;
-    font-size: 50px;
-    color: rgb(41, 41, 41);
-    text-transform: uppercase;
+    text-shadow: #5c5c5c 1px 1px;
 }
 
-h2 {
-    text-align: left;
-    top: 0;
-    position: fixed;
-    font-size: 25px;
-    color: rgb(41, 41, 41);
-    margin: 10px 50px;
-    padding: 3px;
-    border: 1px solid;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color: #b4b4b4;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    text-align: right;
-    border: 1px solid;
-}
-
-ul li {
-    display: inline-block;
-}
-
-ul li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border: 1px solid;
-    color: rgb(41, 41, 41);
-    border-color: rgb(41, 41, 41);
-}
-
-.texto {
+header {
+    background-color: rgb(20, 20, 20);
     display: flex;
-    bottom: 0;
-}
-
-
-.logoig {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color: #b4b4b4;
-    position: fixed;
-    width: 50px;
-    bottom: 0;
-    border: 1px solid;
-}
-
-.conjuntos,
-.remeras,
-.pantalones {
-    width: 400px;
-    height: 400px;
-    margin: 100px;
     align-items: center;
-    background-color: #b4b4b4;
+    gap: 5px;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 0, 0);
 }
 
-#cuestionario {
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+header nav ul li {
+    background-color: rgb(90, 90, 90);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header .logo {
+    background-color: rgb(90, 90, 90);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+a {
+    color: rgb(34, 31, 31);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.contenedor div {
+    width: 33%;
+    border-radius: 15px;
+}
+
+.contenedor div img {
+    border-radius: 20px;
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+    gap: 5px;
+    padding: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+footer .footer-section {
+    color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-form {
+footer .copyright {
+    text-align: center;
+    color: rgb(211, 211, 211);
+}
+
+.productos-uno,
+.productos-dos,
+.productos-tres,
+.productos-cuatro,
+.productos-cinco,
+.productos-seis,
+.productos-siete,
+.productos-ocho,
+.productos-nueve {
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+
+#contactoForm {
     max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
-input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
 select,
 textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    margin-right: 4px;
-    display: inline-block;
-}
-
-input[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
+    margin-right: 5px;
 }
 
 textarea {
     resize: vertical;
 }
 
-
-
-#izquierda , #centro , #derecha{
-    width: 33%;
-    height: 750px;
-    align-items: center;
-    background-color: #b4b4b4;
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-
-
-.carousel-inner {
-    display: flex;
-    animation: slide 9s linear infinite; 
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
-.carousel-item {
-    margin: 0;
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    opacity: 1;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+input:invalid,
+textarea:invalid,
+select:invalid {
+    border: 1px solid red;
 }
 
-.carousel-item img {
-    max-width: 800px; 
-    height: 800px;
-    border-radius: 8px;
+input:invalid+span::before,
+textarea:invalid+span::before,
+select:invalid+span::before {
+    content: "✖ Por favor, completa este campo.";
+    color: red;
+    font-size: 14px;
     display: block;
+    margin-top: 5px;
 }
 
-@keyframes slide {
-    0%, 100% {
-        opacity: 1;
+input:valid+span::before,
+textarea:valid+span::before,
+select:valid+span::before {
+    content: "✔ Campo válido.";
+    color: green;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+section form {
+    color: rgb(0, 0, 0);
+    background-color: rgb(90, 90, 90);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.carousel-slide {
+    min-width: 100vw;
+    box-sizing: border-box;
+    animation: desplazar 10s infinite linear;
+}
+
+img {
+    height: 82vh;
+    width: auto;
+}
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(0);
     }
-    20%, 80% {
-        opacity: 1;
-    }
-    25%, 50% {
+
+    25% {
         transform: translateX(-100%);
     }
-    55%, 75% {
+
+    50% {
         transform: translateX(-200%);
     }
-}
-.contenedor {
-    display:flex;
-    align-items: center;
-    width: 300%; 
-    max-width: 1000px; 
-    margin: 0% auto; 
 
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 1240px) {
+    .imagen-adn-dos {
+        display: none;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-#nosotros {
-    font-size: 20px;
-    margin: 20px;
-}
-.footer-section{
-    text-align: center;
-    bottom: 0;
-}
+@media screen and (max-width: 720px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
 
-.copyright {
-    text-align: center;
-    margin-top: 20px;
-    color: #95a5a6;
-    bottom: 0;
-}
-.ying-yang{
-    margin: 0 40% 0 40%;
-    background-color: white;
-}
-.bloque1,
-.bloque2,
-.bloque3 {
-    width: 500px;
-    height: 500px;
-    margin: 55px;
-    align-items: center;
-    background-color: #b4b4b4;
+    .imagen-adn-uno {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    header {
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 1rem;
+        justify-content: space-between;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+    }
 }
