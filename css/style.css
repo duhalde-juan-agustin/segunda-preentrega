@@ -40,6 +40,11 @@ header nav ul li {
     border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 15px;
+    
+}
+header nav ul li:hover {
+    background-color: rgb(212, 212, 212);
+    
 }
 
 header .logo {
@@ -47,6 +52,9 @@ header .logo {
     border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 15px;
+}
+header .logo:hover {
+    background-color: rgb(212, 212, 212);
 }
 
 a {
