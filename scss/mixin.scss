@@ -1,0 +1,18 @@
+//mixins.css
+@mixin flex{
+    display: flex;
+
+}
+@mixin centrar{
+    justify-content: center;
+    align-items: center;
+}
+// gap y padding
+@mixin gapypad{
+    gap: 5px;
+    padding: 1rem;
+}
+// border 
+@mixin bordes{
+    border: 2px solid rgb(0, 0, 0);
+}
