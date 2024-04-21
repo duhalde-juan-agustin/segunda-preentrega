@@ -10,61 +10,103 @@
     <title>Document</title>
 </head>
 <body>
-        <header>
-            <a class="logo" href="../index.html">
-                <h2>Dual-D</h2>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
-                    <li><a href="contactanos.html">Contactanos</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <a class="logo" href="../index.html">
+            <h2>Dual-D</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <button id="color-mode">🌙</button>
+            </ul>
+        </nav>
+    </header>
 
-<main class="contenedor">
+    <main class="contenedor" id="productos-container">
 
-        <div>
+
+        <div class="fondo-productos1">
             <img class="productos-uno" src="../img/conjuto remar y short.jpg" alt="conjunto remera y short">
+            <h3>Conjunto 1</h3>
+            <p>$10000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos2">
             <img class="productos-dos" src="../img/conjunto 2.jpg" alt="conjunto remrea y pantalon blanco">
+            <h3>Conjunto 2</h3>
+            <p>$10000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos3">
             <img class="productos-tres" src="../img/conjunto 3.jpg" alt="conjunto remera y short negro">
+            <h3>Conjunto 3</h3>
+            <p>$10000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos4">
             <img class="productos-cuatro" src="../img/remera rojo.jpg" alt="remera roja">
+            <h3>Remera 1</h3>
+            <p>$5000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos5">
             <img class="productos-cinco" src="../img/remera negra.jpg" alt="remera negra">
+            <h3>Remera 2</h3>
+            <p>$5000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos6">
             <img class="productos-seis" src="../img/remera con ala.jpg" alt="remera con alas">
+            <h3>Remera 3</h3>
+            <p>$5000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos7">
             <img class="productos-siete" src="../img/jean rojo.jpg" alt="pantalon rojo">
+            <h3>Pantalon 1</h3>
+            <p>$5000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos8">
             <img class="productos-ocho" src="../img/pantalo byn.jpg" alt="pantalon blanco y negro">
+            <h3>Pantalon 2</h3>
+            <p>$5000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-        <div>
+        <div class="fondo-productos9">
             <img class="productos-nueve" src="../img/pantalon blanco.jpg" alt="pantalon blanco">
+            <h3>Pantalon 3</h3>
+            <p>$5000</p>
+            <button class="boton-comprar">Comprar Ahora</button>
         </div>
-</main>
+    </main>
+
+    <div id="carrito" class="carrito">
+        <button id="cerrar-carrito" class="cerrar-carrito">X</button>
+        <h2>Carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button id="comprar-btn">Comprar</button>
+    </div>
+
+    <div id="carrito-icono" class="carrito-icono">
+        <img src="../img/carrito.png" alt="Carrito">
+        <span id="contador-carrito">0</span>
+    </div>
 
     <footer>
-                <div class="footer-section">
-                    <p>Teléfono: +54 9 2227 46 2546</p>
-                    <p>Email: Agustinelcapo29@hotmail.com</p>
-            </div>
+        <div class="footer-section">
+            <p>Teléfono: +54 9 2227 46 2546</p>
+            <p>Email: Agustinelcapo29@hotmail.com</p>
+        </div>
         <div class="copyright">
             <p>&copy; 2023 Dual-D</p>
         </div>
-        
     </footer>
-</body>
 
+    <script src="../javascript/modooscuro.js"></script>
+    <script src="../javascript/carrito.js"></script>
+</body>
 </html>

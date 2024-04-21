@@ -10,89 +10,90 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a class="logo" href="../index.html">
-            <h2>Dual-D</h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
-                <li><a href="contactanos.html">Contactanos</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="productos.html">Productos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Contacta con nosotros</h1>
-    <section>
-        <form id="contactoForm">
-            
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        <header>
+            <a class="logo" href="../index.html">
+                <h2>Dual-D</h2>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <button id="color-mode">🌙</button>
+                </ul>
+            </nav>
+        </header>
+        <h1>Contacta con nosotros</h1>
+        <section>
+            <form id="contactoForm">
+                
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
-            
-            <label for="telefono">Número de Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
+                
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
 
-            
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
+                
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
 
-            
-            <label for="comentario">Comentario o Pregunta:</label>
-            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                
+                <label for="comentario">Comentario o Pregunta:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
 
-            
-            <label>Preferencias de Producto:</label>
-            <select id="preferencias" name="preferencias">
-                <option value="ropa_femenina">Ropa Femenina</option>
-                <option value="ropa_masculina">Ropa Masculina</option>
-                <option value="accesorios">Accesorios</option>
-            </select>
+                
+                <label>Preferencias de Producto:</label>
+                <select id="preferencias" name="preferencias">
+                    <option value="ropa_femenina">Ropa Femenina</option>
+                    <option value="ropa_masculina">Ropa Masculina</option>
+                    <option value="accesorios">Accesorios</option>
+                </select>
 
-            
-            <label>Talla y Estilo Preferido:</label>
-            <input type="checkbox" id="talla_s" name="talla" value="small">
-            <label for="talla_s">S</label>
-            <input type="checkbox" id="talla_m" name="talla" value="medium">
-            <label for="talla_m">M</label>
-            <input type="checkbox" id="talla_l" name="talla" value="large">
-            <label for="talla_l">L</label>
+                
+                <label>Talla y Estilo Preferido:</label>
+                <input type="checkbox" id="talla_s" name="talla" value="small">
+                <label for="talla_s">S</label>
+                <input type="checkbox" id="talla_m" name="talla" value="medium">
+                <label for="talla_m">M</label>
+                <input type="checkbox" id="talla_l" name="talla" value="large">
+                <label for="talla_l">L</label>
 
-            
-            <label>¿Cómo nos encontraste?</label>
-            <input type="radio" id="busqueda" name="encontrado" value="busqueda">
-            <label for="busqueda">Búsqueda en línea</label>
-            <input type="radio" id="redes_sociales" name="encontrado" value="redes_sociales">
-            <label for="redes_sociales">Redes Sociales</label>
-            <input type="radio" id="recomendacion" name="encontrado" value="recomendacion">
-            <label for="recomendacion">Recomendación</label>
+                
+                <label>¿Cómo nos encontraste?</label>
+                <input type="radio" id="busqueda" name="encontrado" value="busqueda">
+                <label for="busqueda">Búsqueda en línea</label>
+                <input type="radio" id="redes_sociales" name="encontrado" value="redes_sociales">
+                <label for="redes_sociales">Redes Sociales</label>
+                <input type="radio" id="recomendacion" name="encontrado" value="recomendacion">
+                <label for="recomendacion">Recomendación</label>
 
-            
-            <label>¿Te gustaría recibir nuestras ofertas y novedades por correo electrónico?</label>
-            <input type="checkbox" id="ofertas" name="ofertas" value="si">
+                
+                <label>¿Te gustaría recibir nuestras ofertas y novedades por correo electrónico?</label>
+                <input type="checkbox" id="ofertas" name="ofertas" value="si">
 
-            
-            <label for="sugerencias">¿Tienes alguna sugerencia para mejorar nuestro servicio o productos?</label>
-            <textarea id="sugerencias" name="sugerencias" rows="4"></textarea>
+                
+                <label for="sugerencias">¿Tienes alguna sugerencia para mejorar nuestro servicio o productos?</label>
+                <textarea id="sugerencias" name="sugerencias" rows="4"></textarea>
 
-            
-            <input type="submit" value="Enviar">
-        </form>
-    
-</section>
-<footer>
-    <div class="footer-section">
-        <p>Teléfono: +54 9 2227 46 2546</p>
-        <p>Email: Agustinelcapo29@hotmail.com</p>
-    </div>
-    <div class="copyright">
-        <p>&copy; 2023 Dual-D</p>
-    </div>
-</footer>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        
+    </section>
+    <footer>
+        <div class="footer-section">
+            <p>Teléfono: +54 9 2227 46 2546</p>
+            <p>Email: Agustinelcapo29@hotmail.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Dual-D</p>
+        </div>
+    </footer>
+    <script src="../javascript/modooscuro.js"></script>
 </body>
 </html>

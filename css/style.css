@@ -6,12 +6,8 @@
   font-family: Arial;
 }
 
-body {
-  background-color: rgb(39, 39, 39);
-}
-
-#adn {
-  background-color: white;
+body{
+  background-color: rgb(163, 147, 129);
 }
 
 h1 {
@@ -23,26 +19,28 @@ header {
   display: flex;
   gap: 5px;
   padding: 1rem;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(20, 20, 20);
+  border: 2px solid rgb(27, 22, 15);
+  background-color: rgb(59, 54, 47);
   align-items: center;
   justify-content: space-between;
 }
+
 header nav ul {
   display: flex;
   list-style: none;
   gap: 5px;
 }
 header nav ul li {
-  background-color: rgb(90, 90, 90);
+  background-coloR: rgb(156, 135, 110);
   padding: 10px;
   border-radius: 15px;
 }
+
 header nav ul li:hover {
   background-color: rgb(212, 212, 212);
 }
 
-header.logo {
+header.logo{
   border: 2px solid rgb(0, 0, 0);
   background-color: rgb(90, 90, 90);
   padding: 10px;
@@ -54,7 +52,7 @@ header .logo:hover {
 }
 
 a {
-  color: rgb(34, 31, 31);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   text-transform: uppercase;
   font-size: small;
@@ -106,6 +104,11 @@ footer .copyright {
   margin: 10px;
   border-radius: 15px;
   margin-left: 10%;
+}
+div.fondo-productos1,.fondo-productos2,.fondo-productos3,.fondo-productos4,.fondo-productos5,.fondo-productos6,.fondo-productos7,.fondo-productos8,.fondo-productos9{
+  background-color: rgb(94, 88, 80);
+  margin: 1px;
+
 }
 
 .img-uno, .img-dos, .img-tres, .img-cuatro, .img-cinco, .img-seis, .img-siete, .img-ocho, .img-nueve {
@@ -218,6 +221,7 @@ img {
   width: auto;
 }
 
+
 @keyframes desplazar {
   0% {
     transform: translateX(0);
@@ -235,6 +239,172 @@ img {
     transform: translateX(0);
   }
 }
+.boton-comprar {
+  position: relative;
+  display: inline-block;
+  margin-top: 0px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #221e19;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+
+  
+}
+.carrito {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.carrito.visible {
+  transform: translateX(0);
+}
+
+.carrito h2 {
+  margin: 20px;
+  text-align: center; 
+}
+
+.carrito ul {
+  padding: 0 20px;
+}
+
+.carrito li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.carrito li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.carrito li div {
+  flex-grow: 1;
+}
+
+.carrito li button {
+  background-color: transparent;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.carrito .cerrar-carrito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #ff1100;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.carrito .total-carrito {
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.carrito .boton-comprar {
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.carrito-icono {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carrito-icono img {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 80px; 
+}
+
+
+
+body.modo-oscuro {
+  background-color: #494949;
+  color: #000000;
+}
+
+body.modo-oscuro header {
+  background-color: #242424 !important;
+}
+body.modo-oscuro header nav ul li{
+  background-color: #494949 !important;
+
+}
+body.modo-oscuro header nav ul li:hover {
+  background-color: rgb(107, 107, 107) !important;
+}
+body.modo-oscuro a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: small;
+}
+body.modo-oscuro .boton-comprar {
+  display: inline-block;
+  margin-top: 0px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #b64c22;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+
 @media screen and (max-width: 1240px) {
   .imagen-adn-dos {
     display: none;
