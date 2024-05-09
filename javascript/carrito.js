@@ -113,3 +113,5 @@ const comprarBtn = document.getElementById('comprar-btn');
 comprarBtn.addEventListener('click', () => {
     window.location.href = 'comprar.html';
 });
+
+
